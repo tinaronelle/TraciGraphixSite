@@ -64,7 +64,7 @@ h5,
 h6 {
     font-family: 'Source Sans Pro', sans-serif;
     color: #000;
-    font-weight: 600;
+    font-weight: 600 !important;
     line-height: 1.7;
     margin: 0;
 }
@@ -100,7 +100,10 @@ img {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding: 90px 0;
+}
+.cta-section-padding {
+    padding: 100px x;
 }
 
 .pb-70 {
@@ -126,9 +129,19 @@ img {
 .bg-secondary {
     background-color: #FC089F !important;
 }
+.bg-terciary{
+    background-color: rgb(245, 174, 217);
+}
 
+.bg-cta{
+    background-color: #aaa;
+
+}
 button:focus {
     outline: none;
+}
+.h1{
+    color: black;
 }
 
 
@@ -462,6 +475,8 @@ button:focus {
 
 .about-content p {
     font-weight: 400;
+    margin-bottom: 5%;
+    margin-right: 3%;
 }
 
 .about-content h5 {
@@ -473,9 +488,9 @@ button:focus {
     position: relative;
     display: block;
     margin-bottom: 15px;
-    width: 100%;
+    width: 94%;
     background: #eee;
-    height: 35px;
+    height: 30px;
     -webkit-transition-property: width, background-color;
     transition-property: width, background-color;
 }
@@ -485,7 +500,7 @@ button:focus {
     top: 0;
     left: 0;
     width: 110px;
-    font-size: 14px;
+    font-size: 12px;
     color:#eee;
     background: #000;
 }
@@ -500,7 +515,7 @@ button:focus {
 .skillbar-bar {
     height: 35px;
     width: 0px;
-    background-color: #F67E11;
+    background-color: rgb(245, 174, 217);
 }
 
 .skill-bar-percent {
@@ -565,7 +580,7 @@ button:focus {
 
 
 /*::::::::::::::::::::::::::::::::::::
-   Service Section
+   Service Section/SKILLS
 ::::::::::::::::::::::::::::::::::::*/
 
 .service-area {
@@ -578,7 +593,7 @@ button:focus {
 }
 
 .service-area:before {
-    background-color: #F67E11;
+    background-color: rgb(250, 250, 250);
     position: absolute;
     content: '';
     width: 100%;
@@ -594,7 +609,7 @@ button:focus {
 .single-service {
     background-color: #fff;
     padding: 15px;
-    border: 1px solid #FC089F;
+    border: 1px solid rgb(245, 174, 217);
     -webkit-transition: .3s;
     transition: .3s;
     margin-bottom: 30px;
@@ -615,7 +630,7 @@ button:focus {
     content: '';
     width: 100%;
     height: 5px;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     z-index: -1;
     -webkit-transition: .3s;
     transition: .3s;
@@ -623,7 +638,7 @@ button:focus {
 
 .single-service:hover h2,
 .single-service:hover p {
-    color: #fff
+    color: rgb(240, 239, 239)
 }
 
 .single-service:hover:after {
@@ -632,7 +647,7 @@ button:focus {
 
 .service-icon {
     font-size: 50px;
-    color: #FC089F;
+    color: rgb(245, 174, 217);
 }
 
 
@@ -684,8 +699,6 @@ button:focus {
 
 }
 
-
-
 /*::::::::::::::::::::::::::::::::::::
    Portfolio Section
 ::::::::::::::::::::::::::::::::::::*/
@@ -716,8 +729,8 @@ button:focus {
 .work-list ul li.filter.active,
 .work-list ul li:hover {
     color: #000;
-    background-color: #F67E11;
-    border-color: #F67E11;
+    background-color: rgb(245, 174, 217);
+    border-color: rgb(245, 174, 217);
 }
 
 .row.portfolio .col-lg-4 {
@@ -759,7 +772,7 @@ button:focus {
 
 .portfolio-icon {
     position: absolute;
-    top: 100%;
+    top: 80%;
     margin-top: -20px;
     left: 50%;
     margin-left: -20px;
@@ -1239,7 +1252,8 @@ p.comment-date {
 }
 
 .testimonial-area .bg-white {
-    padding: 60px;
+    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .testimonial-quote {
@@ -1295,6 +1309,150 @@ p.comment-date {
 /*::::::::::::::::::::::::::::::::::::
    Team Section
 ::::::::::::::::::::::::::::::::::::*/
+
+.single-team {
+    border-bottom: 10px solid #ffc900;
+    box-shadow: 0 0 30px #ddd;
+    margin-bottom: 30px;
+}
+
+.team-thumb {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    background-position: center top;
+    background-size: cover;
+    z-index: 1;
+}
+
+.team-thumb:after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.single-team:hover .team-thumb:after {
+    background-color: #ffc900;
+}
+
+.team-thumb:after,
+.team-thumb:before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+}
+
+.team-thumb:before {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.single-team:hover .team-thumb:before {
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.team-content {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.team-content h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.team-content span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team-social {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.team-social a {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid;
+    font-size: 15px;
+    line-height: 30px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.team-social a:hover {
+    color: #000;
+
+}
+
+.single-team:hover .team-social {
+    margin-top: -15px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+
+/*::::::::::::::::::::::::::::::::::::
+   Call to Action Area
+::::::::::::::::::::::::::::::::::::*/
+
+.call-to-action p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+
+}
+.cta-button {
+    height: 100%;
+    text-align: right;
+    color: #000;
+}
+
+.cta-button .button {
+    color: #fff;
+    border-color: #ccc;
+    background-color:#FC089F;
+}
+
+.cta-button .button:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color:  #000;
+}
 
 
 
@@ -1416,3 +1574,149 @@ input:-webkit-autofill {
 .copyright-text a:hover {
     color:#FC089F;
 }
+
+/*::::::::::::::::::::::::::::::::::::
+   Portfolio Section
+::::::::::::::::::::::::::::::::::::*/
+
+.work-list {
+    margin-bottom: 60px;
+}
+
+.portfolio-area .mix {
+    display: none;
+}
+
+.work-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.work-list ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.work-list ul li.filter.active,
+.work-list ul li:hover {
+    color: #000;
+    background-color: #F67E11;
+    border-color: #F67E11;
+}
+
+.row.portfolio .col-lg-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.single-portfolio {
+    height: 240px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.single-portfolio:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: -1;
+
+}
+
+.single-portfolio:hover:after {
+    height: 100%;
+}
+
+.portfolio-icon {
+    position: absolute;
+    top: 100%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+
+.single-portfolio:hover .portfolio-icon {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    top: 50%
+}
+
+.portfolio-icon a {
+    font-size: 15px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    display: inline-block;
+    line-height: 40px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.portfolio-icon a:hover {
+    border-radius: 50%;
+}
+
+.portfolio-hover h4 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio-hover {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -60px;
+    padding: 5px;
+    z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.portfolio-hover:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #000;
+    z-index: -1;
+}
+
+.single-portfolio:hover .portfolio-hover {
+    bottom: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible
+}
+
