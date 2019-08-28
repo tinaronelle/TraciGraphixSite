@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
-    <title>Blog | Safs - HTML</title>
+    <title>Safs- HTML</title>
 
     <!-- ====== Google Fonts ====== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
@@ -22,6 +22,16 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav">
+    
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <!-- // Preloader -->
+    
 
     <!-- ====== Header ====== -->
     <header id="header" class="header">
@@ -30,7 +40,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand logo" href="index.html">
-                    <img src="assets/images/logo.png" alt="logo">
+                    <img src="assets/images/tglogorev.png" alt="logo">
                 </a>
                 <!-- // Logo -->
 
@@ -40,225 +50,760 @@
 
                 <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="blog.html">BLOG</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">SKILLS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonial">TESTIMONIALS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- ====== // Navbar ====== -->
-
-        <!-- Page Title -->
-        <div class="page-title bg-img section-padding bg-overlay" style="background-image: url(assets/images/breadcrumb.jpg)">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h2>Blog</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- // Page Title -->
     </header>
     <!-- ====== // Header ====== -->
 
-
-
-    <section class="blog-section">
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home">
+        <!-- Hero Area Content -->
         <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h2 class="text-uppercase">Welcome!</h2>
+                        <h3 class="text-uppercase"><span class="typed"></span></h3>
+                        <p>Polish & Style</p>
+                        <a href="#about" class="button smooth-scroll">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/artdirector2.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/graphicdesigner.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
+    </div>
+    <!-- ====== //Hero Area ====== -->
+
+    
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <!--<div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>About Me</h2>-->
+                        <!--<p>I'm an artist with an expertise working with marketing and sales teams within the Publishing and not for profit sectors.  My assets are my abliity to design marketing collateral, create website content and plan events using the skills that I have aquired and honed over many years. </p>-->
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="blog-area">
-                        <div class="row">
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-1.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="single-blog.html" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-2.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="single-blog.html" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-3.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="single-blog.html" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-4.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="#" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-5.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="#" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-6.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="single-blog.html" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-7.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="single-blog.html" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
-                            <!-- Single Blog -->
-                            <div class="col-sm-6">
-                                <div class="single-blog">
-                                    <div class="blog-thumb" style="background-image: url(assets/images/blog/img-8.jpg)"></div>
-                                    <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
-                                    <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
-                                    <a href="single-blog.html" class="button">Read More</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog -->
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/traci3sized.jpg">
+                        <!-- Social Link -->
+                        <div class="social-aria">
+                            <a target="_blank" href="#"><i class="fab fa fa-linkedin"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 text-center">
-                                <a href="#" class="button blog-btn">Load More</a>
-                            </div>
-                        </div>
+                        <!-- // Social Link -->
                     </div>
                 </div>
-                
-                <!-- Sidebar -->
-                <div class="col-lg-4">
-                    <div class="blog-sidebar">
-                        <!-- Sidebar Widget -->
-                        <div class="sidebar-widget">
-                            <h2 class="sidebar-title">Search here</h2>
-                            <form action="blog.html" method="get">
-                                <input type="search" placeholder="Search">
-                                <button><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                        <!-- Sidebar Widget -->
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>I am <span>Traci Robinson-Greene</span></h2>
+                        <h4>Art Director and Graphic Designer</h4>
+                        <!--<p>I have excelled effectively working in both digital and print design in order to complete projects successfully while maintaining brand identity. I am skilled at executing design materials from concept to completion, and I am quick to learn and apply new professional skills.
+                        Along with being a Graphic Designer, I also am a professional singer, actress and choreographer. I currently work part-time as Creative Director for the tribute show, Forever Motown. I love to read, knit and dance in my free time.</p>--><p>I am a Graphic Design professional with 20+ years of experience. Effectively in working both digital and print design platforms. I've completed projects successfully. Whether creating or maintaining their brand identity, I as executing design materials from concept to completion. Why me? I have the ability to take on leadership roles within teams or work independently to achieve goals. My background is diverse and well rounded – Corporate, Not-For_Profit and Freelance. </p>
 
-                        <!-- Sidebar Widget -->
-                        <div class="sidebar-widget">
-                            <h2 class="sidebar-title">Categories</h2>
-                            <ol>
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">Idea</a></li>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">HTML Template</a></li>
-                                <li><a href="#">Wordpress</a></li>
-                                <li><a href="#">Other</a></li>
-                            </ol>
                         </div>
-                        <!-- Sidebar Widget -->
 
-                        <!-- Sidebar Widget -->
-                        <div class="sidebar-widget">
-                            <h2 class="sidebar-title">RECENT POSTS</h2>
-                            <ol class="recent-post">
-                                <!-- Single Recent Post -->
-                                <li>
-                                    <span style="background-image: url(assets/images/blog/img-1.jpg)"></span>
-                                    <div class="blog-content">
-                                        <a href="single-blog.html">Lorem ipsum dolor sit amet onsectetur</a>
-                                        <div class="blog-date">22 FEB 2018</div>
-                                    </div>
-                                </li>
-                                <!-- Single Recent Post -->
-                                <!-- Single Recent Post -->
-                                <li>
-                                    <span style="background-image: url(assets/images/blog/img-2.jpg)"></span>
-                                    <div class="blog-content">
-                                        <a href="single-blog.html">Lorem ipsum dolor sit amet onsectetur</a>
-                                        <div class="blog-date">22 FEB 2018</div>
-                                    </div>
-                                </li>
-                                <!-- Single Recent Post -->
-                                <!-- Single Recent Post -->
-                                <li>
-                                    <span style="background-image: url(assets/images/blog/img-3.jpg)"></span>
-                                    <div class="blog-content">
-                                        <a href="single-blog.html">Lorem ipsum dolor sit amet onsectetur</a>
-                                        <div class="blog-date">22 FEB 2018</div>
-                                    </div>
-                                </li>
-                                <!-- Single Recent Post -->
-                                <!-- Single Recent Post -->
-                                <li>
-                                    <span style="background-image: url(assets/images/blog/img-4.jpg)"></span>
-                                    <div class="blog-content">
-                                        <a href="single-blog.html">Lorem ipsum dolor sit amet onsectetur</a>
-                                        <div class="blog-date">22 FEB 2018</div>
-                                    </div>
-                                </li>
-                                <!-- Single Recent Post -->
-                            </ol>
-                        </div>
-                        <!-- Sidebar Widget -->
+                        <h5<></h5>
 
-                        <!-- Sidebar Widget -->
-                        <div class="sidebar-widget">
-                            <h2 class="sidebar-title">POPULAR TAGS</h2>
-                            <ol class="tags">
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">Idea</a></li>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">HTML Template</a></li>
-                                <li><a href="#">Wordpress</a></li>
-                                <li><a href="#">Other</a></li>
-                            </ol>
+                        <!-- Skill Area -->
+                        <div id="skills" class="skill-area">
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>Photoshop</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="95%">
+                                    <div class="skillbar-title"><span>Illustrator</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">95%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                             <!-- Single skill -->
+                             <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>InDesign</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="60%">
+                                    <div class="skillbar-title"><span>HTML</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                             <!-- Single skill -->
+                             <div class="single-skill">
+                                <div class="skillbar" data-percent="95%">
+                                    <div class="skillbar-title"><span>Wordpress</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">95%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="40%">
+                                    <div class="skillbar-title"><span>CSS</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">40%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>Powerpoint</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
                         </div>
-                        <!-- Sidebar Widget -->
+                        <!-- //Skill Area -->
                     </div>
                 </div>
-                <!-- // Sidebar -->
             </div>
         </div>
     </section>
+    <!-- ====== // About Area ====== -->
+
+
+    <!-- ====== Featured Area ====== -->
+    <!--<section id="featured" class="section-padding pb-70">
+        <div class="container">
+            <div class="row">
+
+                 single featured item --
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Art Direction</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <p>Most recently wholly responsible for the visual style and imagery for all of company's digital and print collateral and branding including website management. Directed and collaborated with Marketing Director and Fundraising leadership to create event and mission literature. </p>
+                        </div>
+                    </div>
+                </div>
+                 single featured item --
+
+                 single featured item 
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Branding</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>Responsible for maintaining brand standards for both corporate and not-for-profit companies via print, digital, mail/ads, social media, signage and event collateral, as well as assisting in the direction of-rebranding roll out.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 single featured item --
+                 single featured item --
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Graphic Design</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <p>My skills and specialties include Adobe: Photoshop, InDesign, Illustrator, MS Office: Word, PowerPoint, Excel & Outlook. Also skilled with BaseCamp, Luminate Online, WordPress, Knowledge of HTML & CSS, QuarkXpress and Getting Things Done.</p>
+                        </div>
+                    </div>
+                </div>
+                 single featured item
+            </div>
+        </div>
+    </section>
+     ====== //Featured Area ====== -->
+
+
+    <!-- ====== Fact Counter Section ====== -->
+    <!-- ====================================================================
+            NOTE: You need to change  'data-count="10"' and 'p' Eliments 
+        ===================================================================== -->
+    <section class="section-padding pb-70 bg-img fact-counter" id="counter" style="background-image: url(assets/images/fan-fact-bg.jpg)">
+        <div class="container">
+            <div class="row">
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 co col-md-6 l-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="20">0</span>+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="400">0</span>+</h2>
+                        <p>Collaborations</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="1500">0</span>+</h2>
+                        <p>Print/Digital Projects</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="1000">0</span>+</h2>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Fact Counter Section ====== -->
+
+
+ <!-- ====== Service Section AKA SKILLS SECTION ====== -->
+ <section id="service" class="section-padding pb-70 service-area bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 ">
+                <div class="section-title text-center">
+                    <h2>Skills</h2>
+                    <p>With this many years of experience, I'm highly skilled in several areas.</p>
+                </div>
+            </div>
+        </div>
+        <!-- //Section Title -->
+
+        <div class="row">
+            <!-- Single Service -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service">
+                    <div class="service-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h2>Art Direction</h2>
+                    <p>Recently responsible for the visual style and imagery fofr all of company's branding (digial/print) and website art direction. Worked closely with Marketing Director & Fundraising teams to create event and mission literature.</p>
+                </div>
+            </div>
+            <!-- //Single Service -->
+            <!-- Single Service -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service">
+                    <div class="service-icon">
+                        <i class="fa fa-chart-area"></i>
+                    </div>
+                    <h2>Branding</h2>
+                    <p>Responsible for maintaining brand standards for both corporate and not-for-profit organizatons via print, digital/mail ads, social media, signage and event collateral, as well as assisting with re-branding roll out.</p>
+                </div>
+            </div>
+            <!-- //Single Service -->
+            <!-- Single Service -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service">
+                    <div class="service-icon">
+                        <i class="fa fa-chart-line"></i>
+                    </div>
+                    <h2>Graphic Design</h2>
+                    <p>My skill toolbox includes expertise including Adobe: Photoshop, InDesign & Illustrator, MS Office Suite: Powerpoint, Excel, Word and Outlook, Basecamp, Luminate Online, Wordpress, HTML and CSS.  I get it done!</p>
+                </div>
+            </div>
+            <!-- //Single Service -->
+        </div>
+
+    </div>
+</section>
+<!-- ====== //Service Section AKA SKILLS SECTION ====== -->
+
+    <!-- ====== Why choose Me Section ====== 
+    <section id="" class="section-padding why-choose-me pb-70">
+        <div class="container">
+            !-- Section Title 
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Why choose Me?</h2>
+                        <p>A Graphic Design professional with 20+ years of experience, I have excelled in effectively working in both digital and print design platforms. I've completed projects successfully either creating or maintaining their brand identity as well as executing design materials from concept to completion. Why me? I have the ability to take on leadership roles within teams or work independently to achieve goals. My background is diverse and well rounded – Corporate, Not-For_Profit and Freelance. I'm available to help you with your print or digital needs! My contact information is listed below.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+             //Section Title --
+            <div class="row">
+                !-- Single Why choose me --
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>YOUR PROJECT DELIVERED ON TIME</h4>
+                        <p>I understand the importance of of meeting deadlines and delivering projects on or ahead of time.</p>
+                    </div>
+                </div>
+                !-- // Single Why choose me 
+
+                 Single Why choose me 
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-calendar-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>THE DEVIL IS IN THE DETAILS</h4>
+                        <p>My foundation has made me a stickler for details, which I'm very proud of.</p>
+                    </div>
+                </div>
+                 // Single Why choose me -->
+
+                <!-- Single Why choose me 
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-history"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>ARTISTIC & ORGANIZED</h4>
+                        <p>I've created and managed complete campaigns--invites, posters, programs and more.</p>
+                    </div>
+                </div>
+                < // Single Why choose me -->
+
+                <!-- Single Why choose me 
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-phone-volume"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>TEAMWORK MAKES THE DREAM WORK</h4>
+                        <p> As a designer & director, I've teamed with Marketing, Branding & Sales to come up with best solutions to reach set goals.</p>
+                    </div>
+                </div>
+                -- // Single Why choose me --
+            </div>
+        </div>
+    </section>
+    !-- ====== //Why choose Me Section ====== -->
+
+<!-- ====== Portfolio Section ====== -->
+<section id="portfolio" class="section-padding pb-85 portfolio-area bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 ">
+                <div class="section-title text-center">
+                    <h2>Branding & Graphic Portfolio</h2>
+                    <p>This is just a small sample of some of my work!</p>
+                </div>
+            </div>
+        </div>
+        <!-- //Section Title -->
+        <div class="row justify-content-center">
+            <!-- Work List Menu-->
+            <div class="col-lg-8">
+                <div class="work-list text-center">
+                    <ul>
+                        <li class="filter" class="active" data-filter="all">ALL</li>
+                        <li class="filter" data-filter=".web">Ad/Print</li>
+                        <li class="filter" data-filter=".graphic">Collateral</li>
+                        <li class="filter" data-filter=".logo">Brochures</li>
+                        <li class="filter" data-filter=".wp">Newsletter</li>
+                        <li class="filter" data-filter=".other">Other</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // Work List Menu -->
+        </div>
+        <div class="row portfolio">
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic logo">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/aafs_final-2.jpg)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/aafs_final-2.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>TRIFOLD  <span>BROCHURE</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+ <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic logo">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/aafs_final-1.jpg)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/aafs_final-1.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>TRIFOLD <span>BROCHURE</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix web graphic">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/ad_digital.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/ad_digital.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>DIGITAL <span>AD</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/camp_hermelin-2.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/camp_hermelin-2.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>ORT <span>HERMELIN PROMO</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic web">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/fall-li_brunch.jpg)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/fall-li_brunch.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>EVENT <span>INVITE</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic web">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/camp_hermelin-phase-1-1.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/camp_hermelin-phase-1-1.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>ORT <span>PROMO</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic web">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/olympics_sellsheet-1.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/olympics_sellsheet-1.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover other">
+                        <h4>SI <span>OLYMPICS PROMO</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix web">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/engineering_inviteconcept2.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/engineering_inviteconcept2.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>EVENT <span>INVITE</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix graphic web">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/engineering_invite2014pg1.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/engineering_invite2014pg1.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>EVENT <span>INVITE</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix other logo">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/iquail3.jpg)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/iquail3.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>DANCE IQUAIL! <span>PROMO</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix other">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/thegreatww_revised4-1.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/thegreatww_revised4-1.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>GWW BOOK <span>COVER</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix wp">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/oatimes_winter2017-1.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/oatimes_winter2017-1.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>ORT <span>NEWSLETTER</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+            <!-- Single Portfolio -->
+            <div class="col-lg-4 col-md-6 mix wp">
+                <div class="single-portfolio" style="background-image: url(assets/images/portfolio/oatimes_winter2017-4.png)">
+                    <div class="portfolio-icon text-center">
+                        <a data-lightbox='lightbox' href="assets/images/portfolio/oatimes_winter2017-4.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                    </div>
+                    <div class="portfolio-hover">
+                        <h4>ORT <span>NEWSLETTER</span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- // Single Portfolio -->
+        </div>
+    </div>
+</section>
+<!-- ====== // Portfolio Section ====== -->
+
+
+    <!-- ====== Testimonials Section ====== -->
+    <section id="testimonial" class="section-padding bg-secondary testimonial-area">
+        <div class="container bg-white">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Testimonials</h2>
+                        <p>Some great words from the colleagues I've worked with.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonials owl-carousel" data-ride="carousel">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Traci is a very talented graphic designer that has a great artistic passion that can bring ideas and concepts to reality on the computer and print.  She always brings professionalism, a "can do" attitude and a team player mentality to the table on whatever she works on.  She would be a wonderful asset to any group or project.</p>
+                            <h4>Alvin Lee <span>Technology Manager, New York Magazine</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Traci is my go-to person whenever I need a power-point presentation. Through pictures, images, fonts, and backgrounds, she adds visual and graphic pieces to my presentations to make them stand out. Traci is easy to work with, eager to please, and delivers when it is crunch time.</p>
+                            <h4>Bill Colihan <span>CEO - Advertising Sales Manager, Portland Magazine</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Traci is a highly creative and talented Graphic Designer who always provided the very best in visual branding for Sports Illustrated.  She tirelessly kept working and improving on her graphic arts skills to deliver high impact sales presentation materials within challenging time constraints. She is a pleasure to work with.</p>
+                            <h4>Jacqueline Velez <span>Account Manager, Project Manager, Sports Illustrated</span></h4>
+
+        
+                        <!-- // Single Testimonial -->
+                        </div>
+    </section>
+
+
+    <!-- ====== Call to Action Area ====== -->
+    <section id="contact" class="section-padding contact-section bg-light"></section>
+    <section class="section-padding cta-heading call-to-action-aria bg-secondary">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h1>I'm available for Permanent and Freelance Positions!</h1>
+                    <p>Let me elevate your projects!  My skill set lends itself to lots of different possibilities and I'm ready to work for you.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cta-button">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <a href="mailto:tracidances@yahoo.com " class="button">Contact me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Call to Action Area ====== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- ====== Call to Action Area ====== 
+
+
+     <section class="section-padding call-to-action-aria bg-secondary">
+        <section id="contact" class="section-padding contact-section bg-light"></section>
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-9">
+                   <h2>I'm available for Permanent and Freelance Positions!</h2>
+                   <p>If you're looking for an experienced art director, graphic designer, presentation manager with loads of experience, great personality, attention to detail and ability to be flexible, contact me!</p>
+               </div>
+               <div class="col-lg-3">
+                   <div class="cta-button">
+                       <div class="d-table">
+                           <div class="d-table-cell">
+                               <a href="mailto: tracidances@yahoo.com" target="_blank" class="button">Contact me</a>
+                           </div>
+                       </div>
+                   </div>
+   </section>
+    ====== // Call to Action Area ====== -->
+
+    <!-- ====== Contact Area ====== -->
+    <!--<section id="contact" class="section-padding contact-section bg-light">
+        <div class="container">-->
+            <!-- Section Title -->
+            <!--<div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Resume</h2>
+                        <p>For a detailed Resume, please fill out this form.</p>
+                    </div>
+                </div>
+            </div>-->
+            <!-- //Section Title -->
+
+            <!-- Contact Form 
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    !-- Form 
+                    <form id="contact-form" action="mail.php" method="post" class="contact-form bg-white">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input type="text" class="form-control" name="name" required placeholder="Name">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input type="email" class="form-control" name="email" required placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" required placeholder="Subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="" class="form-control" required placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-btn text-center">
+                            <button class="button" type="submit">Send Message</button>
+                            <p class="form-message"></p>
+                        </div>
+                    </form>
+                    // Form 
+                </div>
+            </div>
+            // Contact Form 
+        </div>
+    </section>
+     ====== // Contact Area ====== -->
+
 
     <!-- ====== Footer Area ====== -->
     <footer class="footer-area">
@@ -266,7 +811,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="copyright-text">
-                        <p class="text-white">&copy; 2018 <a href="https://www.begindot.com/">A Template Designed by Begindot</a></p>
+                        <p class="text-white">&copy; 2018 <a href="https://www.begindot.com/">A Template Designed by Begindot & Revised by Tina Ronelle!</a></p>
                     </div>
                 </div>
             </div>
@@ -275,14 +820,20 @@
     <!-- ====== // Footer Area ====== -->
 
 
-    <!-- ====== ALL JS ====== -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+
+
+
+     <!-- ====== ALL JS ====== -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/lightbox.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.mixitup.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
