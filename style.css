@@ -60,13 +60,20 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-family: 'Source Sans Pro', sans-serif;
     color: #000;
     font-weight: 600 !important;
     line-height: 1.7;
     margin: 0;
+}
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-weight: 400 !important;
+    font-size: 18px;
+    line-height: 1.7;
+
 }
 
 .d-table {
@@ -100,12 +107,14 @@ img {
 }
 
 .section-padding {
-    padding: 90px 0;
+    padding: 70px 0;
 }
 .cta-section-padding {
     padding: 100px x;
 }
-
+.testimonials-section-padding{
+    padding:100px;
+}
 .pb-70 {
     padding-bottom: 70px;
 }
@@ -127,10 +136,10 @@ img {
 }
 
 .bg-secondary {
-    background-color: #FC089F !important;
+    background-color: rgb(252, 134, 8) !important;
 }
 .bg-terciary{
-    background-color: rgb(245, 174, 217);
+    background-color: rgb(252,134,8);
 }
 
 .bg-cta{
@@ -142,6 +151,11 @@ button:focus {
 }
 .h1{
     color: black;
+}
+
+.title { 
+    font-size: 36px;
+
 }
 
 
@@ -169,7 +183,7 @@ button:focus {
 
 .cube1,
 .cube2 {
-    background-color: #FC089F;
+    background-color: #F67E11;
     width: 25px;
     height: 25px;
     position: absolute;
@@ -250,13 +264,13 @@ button:focus {
     bottom: 0;
     width: 50px;
     height: 5px;
-    background-color: #000;
+    background-color: rgb(2, 11, 36);
 }
 
 .section-title h2:before {
     left: auto;
     right: 50%;
-    background-color:  #FC089F;
+    background-color:  xc;
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -271,13 +285,13 @@ button:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: #fff;
-    font-size: 15px;
+    color: rgb(5, 122, 218);
+    font-size: 13px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover,
 .navbar-expand-lg .navbar-nav .nav-link.active {
-    color: #FC089F;
+    color: rgb(225, 158, 96);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -302,7 +316,7 @@ button:focus {
     bottom: 0;
     width: 50%;
     height: 100%;
-    background-color: #FC089F;
+    background-color:#ff7c17;
     opacity: .8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     z-index: 2;
@@ -331,7 +345,9 @@ button:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    
+    /*background-color:rgb(5, 122, 218);*/
+    background-color: 0;
     opacity: .3;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     z-index: -1;
@@ -353,6 +369,7 @@ button:focus {
 
 .hero-content .button {
     margin-top: 30px;
+    /*background-color: rgb(5, 122, 218);*/
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -366,7 +383,7 @@ button:focus {
 
 .single-featured-item-wrap {
     background-color: #fff;
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px rgb(189, 188, 188);
 }
 
 .single-featured-item-wrap h3 a {
@@ -380,7 +397,7 @@ button:focus {
 }
 
 .single-featured-item-wrap:hover a {
-    color: #FC089F
+    color: rgb(255, 183, 115);;
 }
 
 .single-featured-item-wrap:hover a:after {
@@ -416,19 +433,21 @@ button:focus {
 
 .about-bg {
     height: 100%;
-    min-height: 400px;
+    min-height: 100px;
     position: relative;
-    background-size: cover;
+    background-size: 96%;
     background-position: center;
-    background-color:#FC089F;
+    color: #F67E11;
+    background-color:white;
+    padding: 0;
 }
 
 .social-aria a {
-    color: #fff;
+    color: #F67E11;
     width: 30px;
     height: 30px;
     display: inline-block;
-    border: 1px solid;
+    border: 2px solid;
     text-align: center;
     line-height: 30px;
     margin: 0 5px;
@@ -452,7 +471,7 @@ button:focus {
 .social-aria:after {
     position: absolute;
     content: '';
-    background-color: #000;
+    background-color: rgb(159, 209, 250);
     width: 100%;
     height: 100%;
     bottom: 0;
@@ -463,8 +482,8 @@ button:focus {
 }
 
 .about-content h2 span {
-    color: #FC089F;
-    font-size: 100%;
+    color: rgb(5, 122, 218);;
+    font-size: 110%;
 }
 
 .about-content h4 {
@@ -500,8 +519,9 @@ button:focus {
     top: 0;
     left: 0;
     width: 110px;
-    font-size: 12px;
-    color:#eee;
+    font-size: 11px;
+    font-weight: 600;
+    color:rgb(159, 209, 250);
     background: #000;
 }
 
@@ -515,14 +535,15 @@ button:focus {
 .skillbar-bar {
     height: 35px;
     width: 0px;
-    background-color: rgb(245, 174, 217);
+    background-color: rgb(225, 158, 96);
 }
 
 .skill-bar-percent {
     position: absolute;
     right: 10px;
     top: 0;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
     height: 35px;
     line-height: 35px;
 }
@@ -609,7 +630,7 @@ button:focus {
 .single-service {
     background-color: #fff;
     padding: 15px;
-    border: 1px solid rgb(245, 174, 217);
+    border: 1px solid #fa6c00;
     -webkit-transition: .3s;
     transition: .3s;
     margin-bottom: 30px;
@@ -630,7 +651,8 @@ button:focus {
     content: '';
     width: 100%;
     height: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: #fa6c00;
+    /*background-color: #fa6c00;*/
     z-index: -1;
     -webkit-transition: .3s;
     transition: .3s;
@@ -638,7 +660,8 @@ button:focus {
 
 .single-service:hover h2,
 .single-service:hover p {
-    color: rgb(240, 239, 239)
+    /*color: rgb(240, 239, 239);*/
+    color:#000;
 }
 
 .single-service:hover:after {
@@ -647,7 +670,7 @@ button:focus {
 
 .service-icon {
     font-size: 50px;
-    color: rgb(245, 174, 217);
+    color:rgb(5, 122, 218);
 }
 
 
@@ -1443,9 +1466,9 @@ p.comment-date {
 }
 
 .cta-button .button {
-    color: #fff;
-    border-color: #ccc;
-    background-color:#FC089F;
+    color: #000000;
+    border-color: #000;
+    background-color: #F67E11;
 }
 
 .cta-button .button:hover {
@@ -1454,6 +1477,11 @@ p.comment-date {
     background-color:  #000;
 }
 
+.p1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
 
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1562,17 +1590,17 @@ input:-webkit-autofill {
 .footer-area {
     padding: 30px;
     background-color: #000;
-    border-bottom: 5px solid #FC089F;
+    border-bottom: 5px solid #F67E11;
 }
 
 .copyright-text a {
-    color: #eee;
+    color:rgb(5, 122, 218);
     -webkit-transition: .3s;
     transition: .3s;
 }
 
 .copyright-text a:hover {
-    color:#FC089F;
+    color:#fa6c00;
 }
 
 /*::::::::::::::::::::::::::::::::::::
